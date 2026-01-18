@@ -1,0 +1,69 @@
+body{
+    background-color:  #151b5b;
+}
+.content_main {
+    background-color: black;
+    width: 200px; 
+    height: 200px;
+    margin: 20px; 
+    border: 2px solid rgb(107, 107, 245);
+    position: relative;
+}
+.sun {
+    width: 50px; 
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50px; 
+    margin: 10px; 
+    position:absolute;
+}
+.stars {
+    width: 200px;
+    height: 200px;
+    background-image: url("stars.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;
+}
+.clouds {
+    width: 200px;
+    height: 50px;
+    background-image: url("clouds.png");
+    background-repeat:no-repeat; 
+    background-size:cover;
+    position:absolute;
+    display:none;
+    z-index:1; 
+    
+}  
+.content_main:hover {
+    background-color: #62d0df;
+} 
+
+.content_main:hover .sun{
+    background-color: #ffeb0a;
+}
+.content_main:hover .stars {
+    display: none;
+}
+.content_main:hover .clouds {
+    display: block;
+}
+
+
+.background-two {
+    margin: 20px;
+    width: 200px; 
+    height: 200px; 
+    border:solid 4px #541f03; 
+    background-image: url("scale_1200.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.background-two:active {
+    background-image: url("QPdAc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
